@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>MJ — Personal Landing</title>
+<style>
+  :root{
+    --bg:#0b0d12; --panel:#12161f; --line:#222836;
+    --fg:#e9edf5; --muted:#98a2b8; --accent:#6ea8fe; --accent2:#7ef0c1;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0}
+  body{
+    background:
+      radial-gradient(900px 500px at 15% -10%, rgba(110,168,254,.18), transparent 60%),
+      radial-gradient(700px 400px at 95% 0%, rgba(126,240,193,.12), transparent 60%),
+      var(--bg);
+    color:var(--fg);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Pretendard","Noto Sans KR",sans-serif;
+    line-height:1.6; min-height:100vh;
+  }
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+  header{display:flex;align-items:center;justify-content:space-between;padding:28px 0}
+  .logo{font-weight:800;letter-spacing:-.02em;font-size:18px}
+  .logo span{color:var(--accent)}
+  nav a{color:var(--muted);text-decoration:none;margin-left:22px;font-size:14px}
+  nav a:hover{color:var(--fg)}
+  .hero{padding:80px 0 60px}
+  .badge{
+    display:inline-block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--accent2);border:1px solid rgba(126,240,193,.3);
+    background:rgba(126,240,193,.07);padding:6px 12px;border-radius:999px;
+  }
+  h1{font-size:clamp(34px,6vw,60px);line-height:1.12;letter-spacing:-.03em;margin:20px 0 16px}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .lead{color:var(--muted);font-size:18px;max-width:620px;margin:0 0 32px}
+  .cta{display:flex;gap:12px;flex-wrap:wrap}
+  .btn{
+    display:inline-block;padding:12px 22px;border-radius:10px;text-decoration:none;
+    font-weight:600;font-size:15px;transition:transform .15s ease,opacity .15s ease;
+  }
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#07121f}
+  .btn-ghost{border:1px solid var(--line);color:var(--fg)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;padding:20px 0 70px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:22px}
+  .card h3{margin:0 0 8px;font-size:16px}
+  .card p{margin:0;color:var(--muted);font-size:14px}
+  .k{font-size:22px;margin-bottom:10px}
+  footer{border-top:1px solid var(--line);padding:26px 0 50px;color:var(--muted);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">MJ<span>.</span></div>
+    <nav>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <span class="badge">Test Deploy</span>
+    <h1>아이디어를<br /><em>바로 배포되는 것</em>으로.</h1>
+    <p class="lead">
+      GitHub에 푸시하면 Vercel이 알아서 올려주는, 가장 단순한 랜딩 페이지.
+      이 페이지 자체가 그 파이프라인의 결과물입니다.
+    </p>
+    <div class="cta">
+      <a class="btn btn-primary" href="#work">둘러보기</a>
+      <a class="btn btn-ghost" href="#contact">연락하기</a>
+    </div>
+  </section>
+
+  <section class="grid" id="work">
+    <div class="card"><div class="k">⚡</div><h3>빠른 배포</h3><p>push 한 번이면 몇 초 안에 전 세계 엣지에 반영됩니다.</p></div>
+    <div class="card"><div class="k">🧩</div><h3>단순한 구조</h3><p>빌드 도구 없는 정적 HTML 한 장. 유지보수 부담이 없습니다.</p></div>
+    <div class="card"><div class="k">🌙</div><h3>다크 우선</h3><p>눈이 편한 색과 여백. 모바일에서도 그대로 읽힙니다.</p></div>
+  </section>
+
+  <footer id="contact">
+    <div>© 2026 MJ — 테스트용 랜딩 페이지</div>
+    <div id="about">Built with GitHub → Vercel</div>
+  </footer>
+</div>
+</body>
+</html>
