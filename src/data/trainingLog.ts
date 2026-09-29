@@ -15,6 +15,15 @@ export type TrainingRecord = {
 
 export const trainingLog: TrainingRecord[] = [
   {
+    id: "224426202045",
+    title: "중학교 영어 내신 A등급, 학교 기출 분석이 답인 이유 (서술형 72점 대비법)",
+    date: "2026-09-29",
+    summary: "중학교 영어 내신에서 같은 교과서를 쓰는데도 학교마다 시험 난이도와 출제 방향이 다르다. 시중 문제집을 아무리 풀어도 점수가 오르지 않는 이유가 여기에 있다.",
+    thumbnail: "",
+    tags: ["중등내신대비", "중학교영어내신", "서술형대비", "중간고사대비"],
+    url: "https://readandtalk3.tistory.com/3"
+  },
+  {
     id: "224386751050",
     title: "영어 원서로 수능 대비가 되나요? 워크북 4장으로 보는 구문독해 훈련법",
     date: "2026-08-22",
